@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="com.example.gbrot.tabletennisscoreboard.MainActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Enter no.of points"/>
+
+        <EditText
+            android:id="@+id/nop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="no. of points"
+            android:inputType="number"
+            android:text="0"/>
+
+        <include layout="@layout/layout" />
+
+        <TextView
+            android:id="@+id/team1name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Team1 name"
+            android:textColor="#616161"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="56sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="addOne"
+            android:text="+1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="subOne"
+            android:text="-1" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="resetScoreA"
+            android:text="Reset Team Score" />
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:onClick="resetScoreB"
+            android:text="Save" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="360dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="com.example.gbrot.tabletennisscoreboard.MainActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enter no. of sets"/>
+        <EditText
+            android:id="@+id/nos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="no. of sets"
+            android:inputType="number"
+            android:text="0"/>
+
+        <include layout="@layout/layout" />
+
+        <TextView
+            android:id="@+id/team2name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Team2 name"
+            android:textColor="#616161"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="56sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="addOneTeamB"
+            android:text="+1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="subOneTeamB"
+            android:text="-1" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="resetScoreB"
+            android:text="Reset Team Score" />
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:onClick="leaderboard"
+            android:text="Leaderboard" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
